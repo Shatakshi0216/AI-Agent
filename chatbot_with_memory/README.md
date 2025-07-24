@@ -54,6 +54,3 @@ This project can be deployed using **Streamlit Community Cloud**.
 
 ---
 
-## 👩‍💻 Author
-
-**Shatakshi Tiwari**
