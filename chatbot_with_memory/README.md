@@ -1,23 +1,23 @@
 # Chatbot with Memory
 
-This project implements a basic AI chatbot with conversational memory using **Streamlit**, **Langchain**, and **Ollama**. The agent remembers previous messages and responds accordingly.
+This project implements a basic AI chatbot with conversational memory using **Streamlit**, **Langchain**, and **Ollama**. The agent retains chat history to generate context-aware responses.
 
 ---
 
 ## Features
 
-- Streamlit-based interface
-- Context-aware replies using memory
-- Powered by a local model (Ollama)
-- Modular, simple to extend
+- Conversational UI built with Streamlit
+- Memory support using Langchain
+- Local language model integration via Ollama
+- Simple and modular structure for easy customization
 
 ---
 
 ## How It Works
 
-- User input is taken via Streamlit UI
-- Langchain manages conversation and memory
-- Ollama runs a local LLM for responses
+- User submits messages through the Streamlit interface.
+- Langchain manages the chat flow and memory using a chat history object.
+- Ollama runs a local LLM to generate responses based on the current context.
 
 ---
 
@@ -25,21 +25,23 @@ This project implements a basic AI chatbot with conversational memory using **St
 
 ```
 chatbot_with_memory/
-├── app.py           # Main Streamlit app
-└── README.md        # Project documentation
+├── app.py             # Main Streamlit app
+├── README.md          # Project-specific documentation
+└── requirements.txt   # Dependencies for this agent
 ```
 
 ---
 
 ## Deployment
 
-This agent can be deployed using **Streamlit Cloud**:
+This project can be deployed using **Streamlit Community Cloud**.
 
-- Repository structure must include this folder.
-- Set the app path to: `chatbot_with_memory/app.py`
-- Dependencies should be listed in the root `requirements.txt`
+- Ensure your repository includes:
+  - `chatbot_with_memory/app.py`
+  - `requirements.txt` in the same folder or project root
+- Set the app path during deployment to: `chatbot_with_memory/app.py`
 
-Deploy at: [https://share.streamlit.io](https://share.streamlit.io)
+Streamlit Cloud: [https://share.streamlit.io](https://share.streamlit.io)
 
 ---
 
